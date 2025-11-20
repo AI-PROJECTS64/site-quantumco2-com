@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>QuantumCO2.com — Actif stratégique « Quantum × CO₂ »</title>
+  <meta name="description" content="QuantumCO2.com — actif numérique descriptif pour les programmes et hubs à l’intersection du calcul avancé (quantique, HPC) et du climat : émissions, technologies CO₂, trajectoires de décarbonation. Bannière neutre disponible à l’acquisition pour groupes, alliances et initiatives Quantum for Climate.">
+
+  <!-- Canonical & hreflang -->
+  <link rel="canonical" href="https://www.quantumco2.com/" />
+  <link rel="alternate" href="https://www.quantumco2.com/" hreflang="fr" />
+  <link rel="alternate" href="https://www.quantumco2.com/" hreflang="en" />
+  <link rel="alternate" href="https://www.quantumco2.com/" hreflang="x-default" />
+  <meta name="robots" content="index,follow,max-image-preview:large">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="QuantumCO2.com — Banner for Quantum × CO₂ programmes" />
+  <meta property="og:description" content="Descriptive .com asset for Quantum × CO₂ initiatives: advanced compute for emissions, CO₂ technologies and decarbonisation pathways. Neutral banner available for acquisition (energy & industry groups, hyperscalers, Quantum for Climate alliances)." />
+  <meta property="og:url" content="https://www.quantumco2.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://www.quantumco2.com/og.jpg" />
+  <meta property="og:image:alt" content="QuantumCO2.com — digital asset for Quantum × CO₂" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://www.quantumco2.com/og.jpg" />
+
+  <!-- Icons & preload -->
+  <link rel="icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preload" as="image" href="/logo-quantumco2.png" imagesizes="260px" />
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "QuantumCO2.com",
+    "url": "https://www.quantumco2.com/",
+    "inLanguage": ["fr-FR","en-GB","en-US"],
+    "description": "Descriptive digital asset for emerging Quantum × CO₂ programmes: advanced compute and quantum technologies applied to emissions management, CO₂ technologies and decarbonisation scenarios.",
+    "sameAs": ["https://www.linkedin.com/company/quantumco2"],
+    "potentialAction": {
+      "@type": "CommunicateAction",
+      "target": "mailto:contact@quantumco2.com"
+    }
+  }
+  </script>
+
+  <!-- Styles -->
+  <style>
+    :root{
+      --bg:#020815;
+      --card:#081120;
+      --muted:#8791b0;
+      --text:#e8eefc;
+      --accent:#7fd0ff;
+      --chip:#101b34;
+      --shadow:0 10px 30px rgba(0,0,0,.45);
+      --radius:18px
+    }
+    *{box-sizing:border-box}
+    html,body{
+      margin:0;
+      padding:0;
+      background:var(--bg);
+      color:var(--text);
+      font:15px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Inter,Ubuntu,Arial,sans-serif
+    }
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1040px;margin:0 auto;padding:28px}
+    .topbar{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      margin:8px 0 22px
+    }
+    .badge{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      background:var(--chip);
+      border:1px solid #1d2946;
+      border-radius:999px;
+      padding:6px 12px;
+      color:#c1ccec;
+      font-size:13px
+    }
+    .lang{
+      gap:10px;
+      display:flex;
+      align-items:center
+    }
+    .lang button{
+      background:var(--chip);
+      color:var(--text);
+      border:1px solid #1d2946;
+      padding:7px 12px;
+      border-radius:999px;
+      cursor:pointer
+    }
+    .lang button[aria-pressed="true"]{
+      background:var(--accent);
+      color:#020815;
+      border-color:transparent
+    }
+    .card{
+      background:var(--card);
+      border:1px solid #1d2946;
+      border-radius:var(--radius);
+      padding:26px;
+      box-shadow:var(--shadow)
+    }
+    .hero h1{
+      margin:0 0 8px;
+      font-size:44px;
+      letter-spacing:.4px
+    }
+    .cta{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+      margin:18px 0 6px
+    }
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      background:#122143;
+      color:#fff;
+      border:1px solid #21325b;
+      padding:11px 16px;
+      border-radius:999px;
+      cursor:pointer;
+      text-decoration:none;
+      font-size:14px
+    }
+    .btn.primary{
+      background:var(--accent);
+      color:#020815;
+      border-color:transparent
+    }
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(12,1fr);
+      gap:18px
+    }
+    .col-6{grid-column:span 6}
+    .col-12{grid-column:span 12}
+    .chip{
+      display:inline-block;
+      background:var(--chip);
+      border:1px solid #1d2946;
+      border-radius:999px;
+      padding:6px 10px;
+      font-size:13px;
+      color:#c1ccec
+    }
+    .list{
+      display:grid;
+      gap:10px;
+      margin:8px 0
+    }
+    .muted{color:var(--muted)}
+    .foot{opacity:.8;font-size:13px;margin-top:24px}
+    img.logo{
+      max-width:260px;
+      height:auto;
+      display:block;
+      margin:10px 0 10px;
+      opacity:.97;
+      border-radius:14px
+    }
+    @media (max-width:860px){
+      .col-6{grid-column:span 12}
+      .hero h1{font-size:34px}
+    }
+    .ico{width:16px;height:16px;display:inline-block;vertical-align:middle}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="badge">Actif numérique disponible à l’acquisition</div>
+      <div class="lang">
+        <button id="btn-fr" aria-pressed="true">FR</button>
+        <button id="btn-en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+
+    <!-- ================ HERO FR ================ -->
+    <section class="card hero" data-fr>
+      <h1>QuantumCO2.com</h1>
+      <img class="logo" src="/logo-quantumco2.png" alt="QuantumCO2.com" loading="eager">
+      <p class="muted">
+        Nom de domaine <b>descriptif</b> pour les programmes et hubs à l’intersection du
+        <b>calcul avancé (quantique, HPC, “extreme compute”)</b> et des enjeux
+        <b>CO₂ / climat / décarbonation</b> : émissions, technologies de capture &amp; stockage,
+        scénarios de trajectoires Net Zero.<br>
+        Conçu comme <b>bannière neutre</b> pour un programme groupe, une plateforme
+        écosystème ou une initiative public–privée autour de <b>« Quantum × CO₂ »</b>.<br>
+        Ce nom permet de sécuriser un <b>territoire narratif rare</b> à la croisée des
+        mégatendances Quantum / Compute et Net Zero / CO₂.<br>
+        <b>Offres sérieuses uniquement (groupes énergie &amp; industrie, hyperscalers,
+        acteurs Quantum for Climate, alliances de filière).</b>
+      </p>
+
+      <div class="cta">
+        <a class="btn primary" href="mailto:contact@quantumco2.com?subject=QuantumCO2.com%20-%20NDA%20%2F%20Proposition&body=Bonjour%2C%0D%0A%0D%0AJe%20souhaite%20obtenir%20votre%20NDA%20et%2Fou%20proposer%20une%20offre%20pour%20QuantumCO2.com.%0D%0AEntreprise%20%3A%20%0D%0ANom%20%2F%20Fonction%20%3A%20%0D%0AUsage%20pr%C3%A9vu%20%3A%20%0D%0ABudget%20indicatif%20%3A%20%0D%0A%0D%0ACordialement%2C">
+          Proposer une offre / Demander un NDA
+        </a>
+        <a class="btn" href="#value-fr">Pourquoi ce nom ?</a>
+        <a class="btn" href="https://www.linkedin.com/company/quantumco2" target="_blank" rel="noopener" aria-label="Ouvrir la page LinkedIn QuantumCO2">
+          <svg class="ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M4.98 3.5C4.98 4.88 3.85 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8.5h4V23h-4V8.5zM8.5 8.5h3.8v2h.05c.53-1 1.84-2.05 3.78-2.05 4.04 0 4.79 2.66 4.79 6.13V23h-4v-6.5z"/>
+          </svg>
+          LinkedIn
+        </a>
+      </div>
+
+      <p class="muted" style="margin-top:8px">
+        Dans un contexte de <b>politiques CO₂ renforcées</b> (ETS, CBAM, taxonomies,
+        reporting durable) et de montée des programmes <b>Quantum for Climate / Energy</b>,
+        QuantumCO2.com offre un <b>point d’entrée unique</b> pour relier calcul avancé,
+        technologies CO₂ et trajectoires de décarbonation au sein d’un groupe ou d’une
+        filière. Aucun conseil juridique, financier ou environnemental n’est fourni ; il
+        s’agit exclusivement d’un <b>actif de nommage descriptif</b>.
+      </p>
+    </section>
+
+    <!-- ================ VALUE FR ================ -->
+    <section id="value-fr" class="card" style="margin-top:16px" data-fr>
+      <div class="grid">
+        <div class="col-6">
+          <h3>Pourquoi QuantumCO2.com a de la valeur</h3>
+          <div class="list">
+            <div class="chip">Intersection claire entre Quantum / HPC et CO₂ / Net Zero</div>
+            <div class="chip">Cadre lisible pour comités climat, R&amp;D, finance et data</div>
+            <div class="chip">Nom de catégorie neutre pour programmes « Quantum × CO₂ »</div>
+            <div class="chip">.com global exact-match — actif défensif si le concept se diffuse</div>
+            <div class="chip">Complément naturel aux actifs Co2Capacity &amp; Quantique.io</div>
+          </div>
+        </div>
+        <div class="col-6">
+          <h3>Exemples de cas d’usage</h3>
+          <div class="list">
+            <div class="chip">Programme groupe « Quantum CO₂ – Readiness &amp; Roadmap »</div>
+            <div class="chip">Hub hyperscaler / Quantum &amp; HPC pour cas d’usage CO₂ clients</div>
+            <div class="chip">Alliance de filière / observatoire Quantum × CO₂</div>
+            <div class="chip">Plateforme de ressources et démonstrateurs Quantum for Climate</div>
+          </div>
+        </div>
+      </div>
+      <p class="muted">
+        Ce site ne vend <b>ni logiciels, ni services de conseil, ni modèles de calcul</b> :
+        uniquement le nom de domaine <b>QuantumCO2.com</b>, en tant qu’actif numérique
+        descriptif. L’acquéreur reste responsable de ses contenus, de ses modèles et de
+        ses obligations réglementaires.
+      </p>
+      <p class="muted">
+        QuantumCO2.com peut, le cas échéant, être combiné avec des actifs tels que
+        <b>Co2Capacity.com / .io / .ai</b> ou <b>Quantique.io</b> afin de constituer un
+        portefeuille cohérent « Quantum &amp; Climat ».
+      </p>
+    </section>
+
+    <!-- ================ ACQUISITION FR ================ -->
+    <section class="card" style="margin-top:16px" data-fr>
+      <h3>Acquisition (process sécurisé)</h3>
+      <p class="muted">
+        Process type : NDA &rarr; échanges stratégiques &rarr; offre formelle &rarr; escrow
+        &rarr; transfert du domaine. L’actif cédé est exclusivement le nom de domaine
+        <b>QuantumCO2.com</b>, sans prestations de conseil, d’audit, d’ingénierie ou de
+        modélisation. Aucun service réglementé n’est fourni.
+      </p>
+      <a class="btn primary" href="mailto:contact@quantumco2.com?subject=QuantumCO2.com%20-%20NDA%20%2F%20Proposition">
+        Contact direct : contact@quantumco2.com
+      </a>
+    </section>
+
+    <!-- ================ DOCS FR ================ -->
+    <section class="card" style="margin-top:16px" data-fr>
+      <h3>Documents / Briefs</h3>
+      <p class="muted">
+        Brief d’acquisition détaillé (2025-11) disponible en français et en anglais
+        pour les équipes Board, Climat / CO₂, R&amp;D, Data/IA, Finance &amp; Juridique.
+      </p>
+      <div class="cta">
+        <a class="btn" href="/Acquisition%20Brief%20quantumco2-202511.pdf" target="_blank" rel="noopener" type="application/pdf">
+          👁️ Ouvrir le Brief (FR)
+        </a>
+        <a class="btn primary" href="/Acquisition%20Brief%20quantumco2-202511.pdf" download="Acquisition-Brief-QuantumCO2-FR-202511.pdf" type="application/pdf">
+          📥 Télécharger (FR, PDF)
+        </a>
+        <a class="btn" href="/Acquisition%20Brief%20quantumco2-EN-202511.pdf" target="_blank" rel="noopener" type="application/pdf">
+          👁️ Open Brief (EN)
+        </a>
+        <a class="btn primary" href="/Acquisition%20Brief%20quantumco2-EN-202511.pdf" download="Acquisition-Brief-QuantumCO2-EN-202511.pdf" type="application/pdf">
+          📥 Download (EN, PDF)
+        </a>
+      </div>
+    </section>
+
+    <!-- ================ HERO EN ================ -->
+    <section class="card hero" data-en hidden>
+      <h1>QuantumCO2.com</h1>
+      <img class="logo" src="/logo-quantumco2.png" alt="QuantumCO2.com" loading="eager">
+      <p class="muted">
+        <b>Descriptive .com domain</b> for programmes and hubs at the intersection of
+        <b>advanced compute (quantum, HPC, “extreme compute”)</b> and
+        <b>CO₂ / climate / decarbonisation</b> objectives: emissions, CO₂ technologies,
+        pathways to Net Zero.<br>
+        Designed as a <b>neutral banner</b> for corporate programmes, ecosystem
+        platforms or public–private initiatives under the umbrella <b>“Quantum × CO₂”</b>.<br>
+        It secures a <b>rare narrative position</b> where Quantum / Compute and Net Zero /
+        CO₂ meet.<br>
+        <b>Serious offers only</b> (energy &amp; industry groups, hyperscalers, Quantum for
+        Climate initiatives, alliances).
+      </p>
+
+      <div class="cta">
+        <a class="btn primary" href="mailto:contact@quantumco2.com?subject=QuantumCO2.com%20-%20NDA%20%2F%20Offer&body=Hello%2C%0D%0A%0D%0AI%27d%20like%20to%20request%20your%20NDA%20and%2For%20submit%20an%20offer%20for%20QuantumCO2.com.%0D%0ACompany%3A%20%0D%0AName%20%2F%20Role%3A%20%0D%0AIntended%20use%3A%20%0D%0ABudget%20range%3A%20%0D%0ABest%2C">
+          Submit an offer / Request NDA
+        </a>
+        <a class="btn" href="#value-en">Why this name?</a>
+        <a class="btn" href="https://www.linkedin.com/company/quantumco2" target="_blank" rel="noopener" aria-label="Open QuantumCO2 on LinkedIn">
+          <svg class="ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M4.98 3.5C4.98 4.88 3.85 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8.5h4V23h-4V8.5zM8.5 8.5h3.8v2h.05c.53-1 1.84-2.05 3.78-2.05 4.04 0 4.79 2.66 4.79 6.13V23h-4v-6.5z"/>
+          </svg>
+          LinkedIn
+        </a>
+      </div>
+
+      <p class="muted" style="margin-top:8px">
+        With tightening <b>CO₂ policies</b> (ETS, CBAM, taxonomies, sustainability reporting)
+        and rising <b>Quantum for Climate / Energy</b> programmes, QuantumCO2.com offers
+        a <b>single entry point</b> to connect advanced compute, CO₂ technologies and
+        decarbonisation pathways for a group or an industry initiative. No legal, financial
+        or environmental advice is provided; this is a <b>descriptive naming asset only</b>.
+      </p>
+    </section>
+
+    <!-- ================ VALUE EN ================ -->
+    <section id="value-en" class="card" style="margin-top:16px" data-en hidden>
+      <div class="grid">
+        <div class="col-6">
+          <h3>Why QuantumCO2.com is valuable</h3>
+          <div class="list">
+            <div class="chip">Clear intersection of Quantum / HPC and CO₂ / Net Zero topics</div>
+            <div class="chip">Framework readable by climate, R&amp;D, finance and data leaders</div>
+            <div class="chip">Neutral category name for “Quantum × CO₂” programmes</div>
+            <div class="chip">Exact-match global .com — defensive asset if the concept spreads</div>
+            <div class="chip">Natural complement to assets such as Co2Capacity and Quantique.io</div>
+          </div>
+        </div>
+        <div class="col-6">
+          <h3>Example use cases</h3>
+          <div class="list">
+            <div class="chip">Group-wide “Quantum CO₂ – Readiness &amp; Roadmap” initiative</div>
+            <div class="chip">Hyperscaler / Quantum &amp; HPC hub for CO₂-related client use cases</div>
+            <div class="chip">Industry alliance / Quantum × CO₂ observatory</div>
+            <div class="chip">Resource &amp; demonstrator hub for Quantum for Climate</div>
+          </div>
+        </div>
+      </div>
+      <p class="muted">
+        This site does <b>not</b> sell software, consulting, engineering or modelling
+        services: it only offers the <b>QuantumCO2.com</b> domain name as a descriptive
+        digital asset. The buyer remains solely responsible for its content, models and
+        regulatory obligations.
+      </p>
+      <p class="muted">
+        Where relevant, QuantumCO2.com can be combined with assets such as
+        <b>Co2Capacity.com / .io / .ai</b> or <b>Quantique.io</b> to build a coherent
+        “Quantum &amp; Climate” portfolio.
+      </p>
+    </section>
+
+    <!-- ================ ACQUISITION EN ================ -->
+    <section class="card" style="margin-top:16px" data-en hidden>
+      <h3>Acquisition (secure process)</h3>
+      <p class="muted">
+        Typical flow: NDA &rarr; strategic discussions &rarr; formal offer &rarr; escrow
+        &rarr; domain transfer. The only asset transferred is the <b>QuantumCO2.com</b>
+        domain name, with no consulting, engineering, audit or modelling services
+        attached. No regulated services are provided.
+      </p>
+      <a class="btn primary" href="mailto:contact@quantumco2.com?subject=QuantumCO2.com%20-%20NDA%20%2F%20Offer">
+        Direct contact: contact@quantumco2.com
+      </a>
+    </section>
+
+    <!-- ================ DOCS EN ================ -->
+    <section class="card" style="margin-top:16px" data-en hidden>
+      <h3>Documents / Briefs</h3>
+      <p class="muted">
+        Detailed acquisition brief (2025-11) available in English and French for
+        Board, Climate / CO₂, R&amp;D, Data/AI, Finance &amp; Legal teams.
+      </p>
+      <div class="cta">
+        <a class="btn" href="/Acquisition%20Brief%20quantumco2-EN-202511.pdf" target="_blank" rel="noopener" type="application/pdf">
+          👁️ Open Brief (EN)
+        </a>
+        <a class="btn primary" href="/Acquisition%20Brief%20quantumco2-EN-202511.pdf" download="Acquisition-Brief-QuantumCO2-EN-202511.pdf" type="application/pdf">
+          📥 Download (EN, PDF)
+        </a>
+        <a class="btn" href="/Acquisition%20Brief%20quantumco2-202511.pdf" target="_blank" rel="noopener" type="application/pdf">
+          👁️ Ouvrir le Brief (FR)
+        </a>
+        <a class="btn primary" href="/Acquisition%20Brief%20quantumco2-202511.pdf" download="Acquisition-Brief-QuantumCO2-FR-202511.pdf" type="application/pdf">
+          📥 Télécharger (FR, PDF)
+        </a>
+      </div>
+    </section>
+
+    <p class="foot muted">
+      © QuantumCO2.com — actif numérique descriptif « Quantum × CO₂ ». Aucune affiliation
+      avec des États, régulateurs, institutions publiques ou programmes officiels
+      « Quantum for Climate ». Usage descriptif uniquement. Pas de conseil juridique,
+      financier, fiscal, scientifique ou environnemental. — Contact :
+      <a href="mailto:contact@quantumco2.com">contact@quantumco2.com</a>
+    </p>
+  </div>
+
+  <script>
+    const frBtn = document.getElementById('btn-fr');
+    const enBtn = document.getElementById('btn-en');
+    const show = (lang) => {
+      document.querySelectorAll('[data-fr]').forEach(n => n.hidden = (lang !== 'fr'));
+      document.querySelectorAll('[data-en]').forEach(n => n.hidden = (lang !== 'en'));
+      frBtn.setAttribute('aria-pressed', String(lang === 'fr'));
+      enBtn.setAttribute('aria-pressed', String(lang === 'en'));
+      document.documentElement.lang = lang;
+    };
+    frBtn.addEventListener('click', () => show('fr'));
+    enBtn.addEventListener('click', () => show('en'));
+    show('fr');
+  </script>
+</body>
+</html>
