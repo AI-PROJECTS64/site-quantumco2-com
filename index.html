@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -184,13 +184,13 @@
     <div class="topbar">
       <div class="badge">Actif numérique disponible à l’acquisition</div>
       <div class="lang">
-        <button id="btn-fr" aria-pressed="true">FR</button>
-        <button id="btn-en" aria-pressed="false">EN</button>
+        <button id="btn-fr" aria-pressed="false">FR</button>
+        <button id="btn-en" aria-pressed="true">EN</button>
       </div>
     </div>
 
     <!-- ================ HERO FR ================ -->
-    <section class="card hero" data-fr>
+    <section class="card hero" data-fr hidden>
       <h1>QuantumCO2.com</h1>
       <img class="logo" src="/logo-quantumco2.png" alt="QuantumCO2.com" loading="eager">
       <p class="muted">
@@ -230,7 +230,7 @@
     </section>
 
     <!-- ================ VALUE FR ================ -->
-    <section id="value-fr" class="card" style="margin-top:16px" data-fr>
+    <section id="value-fr" class="card" style="margin-top:16px" data-fr hidden>
       <div class="grid">
         <div class="col-6">
           <h3>Pourquoi QuantumCO2.com a de la valeur</h3>
@@ -265,8 +265,31 @@
       </p>
     </section>
 
+    <!-- ================ COMPLEMENTARY FR ================ -->
+    <section class="card" style="margin-top:16px" data-fr hidden>
+      <h3>Actifs complémentaires (sélection)</h3>
+      <div class="list">
+        <div class="chip">
+          <a href="https://www.co2capacity.com" target="_blank" rel="noopener">Co2Capacity.com</a> — capacités CO₂ &amp; trajectoires
+        </div>
+        <div class="chip">
+          <a href="https://www.co2capacity.io" target="_blank" rel="noopener">Co2Capacity.io</a> — plateformes &amp; données CO₂
+        </div>
+        <div class="chip">
+          <a href="https://www.co2capacity.ai" target="_blank" rel="noopener">Co2Capacity.ai</a> — IA &amp; modélisation CO₂
+        </div>
+        <div class="chip">
+          <a href="https://www.quantique.io" target="_blank" rel="noopener">Quantique.io</a> — bannière quantique FR / Europe
+        </div>
+      </div>
+      <p class="foot">
+        Possibilités de <b>portefeuille combiné « Quantum &amp; Climat / CO₂ »</b> sous conditions. <br>
+        Contact : <a href="mailto:contact@quantumco2.com">contact@quantumco2.com</a>
+      </p>
+    </section>
+
     <!-- ================ ACQUISITION FR ================ -->
-    <section class="card" style="margin-top:16px" data-fr>
+    <section class="card" style="margin-top:16px" data-fr hidden>
       <h3>Acquisition (process sécurisé)</h3>
       <p class="muted">
         Process type : NDA &rarr; échanges stratégiques &rarr; offre formelle &rarr; escrow
@@ -280,7 +303,7 @@
     </section>
 
     <!-- ================ DOCS FR ================ -->
-    <section class="card" style="margin-top:16px" data-fr>
+    <section class="card" style="margin-top:16px" data-fr hidden>
       <h3>Documents / Briefs</h3>
       <p class="muted">
         Brief d’acquisition détaillé (2025-11) disponible en français et en anglais
@@ -303,7 +326,7 @@
     </section>
 
     <!-- ================ HERO EN ================ -->
-    <section class="card hero" data-en hidden>
+    <section class="card hero" data-en>
       <h1>QuantumCO2.com</h1>
       <img class="logo" src="/logo-quantumco2.png" alt="QuantumCO2.com" loading="eager">
       <p class="muted">
@@ -342,7 +365,7 @@
     </section>
 
     <!-- ================ VALUE EN ================ -->
-    <section id="value-en" class="card" style="margin-top:16px" data-en hidden>
+    <section id="value-en" class="card" style="margin-top:16px" data-en>
       <div class="grid">
         <div class="col-6">
           <h3>Why QuantumCO2.com is valuable</h3>
@@ -377,8 +400,31 @@
       </p>
     </section>
 
+    <!-- ================ COMPLEMENTARY EN ================ -->
+    <section class="card" style="margin-top:16px" data-en>
+      <h3>Related assets (selection)</h3>
+      <div class="list">
+        <div class="chip">
+          <a href="https://www.co2capacity.com" target="_blank" rel="noopener">Co2Capacity.com</a> — CO₂ capacity &amp; pathways
+        </div>
+        <div class="chip">
+          <a href="https://www.co2capacity.io" target="_blank" rel="noopener">Co2Capacity.io</a> — CO₂ platforms &amp; data
+        </div>
+        <div class="chip">
+          <a href="https://www.co2capacity.ai" target="_blank" rel="noopener">Co2Capacity.ai</a> — AI &amp; CO₂ modelling
+        </div>
+        <div class="chip">
+          <a href="https://www.quantique.io" target="_blank" rel="noopener">Quantique.io</a> — quantum banner for FR / Europe
+        </div>
+      </div>
+      <p class="foot">
+        Potential <b>combined “Quantum &amp; Climate / CO₂” portfolio</b> available under specific conditions. <br>
+        Contact: <a href="mailto:contact@quantumco2.com">contact@quantumco2.com</a>
+      </p>
+    </section>
+
     <!-- ================ ACQUISITION EN ================ -->
-    <section class="card" style="margin-top:16px" data-en hidden>
+    <section class="card" style="margin-top:16px" data-en>
       <h3>Acquisition (secure process)</h3>
       <p class="muted">
         Typical flow: NDA &rarr; strategic discussions &rarr; formal offer &rarr; escrow
@@ -392,7 +438,7 @@
     </section>
 
     <!-- ================ DOCS EN ================ -->
-    <section class="card" style="margin-top:16px" data-en hidden>
+    <section class="card" style="margin-top:16px" data-en>
       <h3>Documents / Briefs</h3>
       <p class="muted">
         Detailed acquisition brief (2025-11) available in English and French for
@@ -435,7 +481,7 @@
     };
     frBtn.addEventListener('click', () => show('fr'));
     enBtn.addEventListener('click', () => show('en'));
-    show('fr');
+    show('en');
   </script>
 </body>
 </html>
