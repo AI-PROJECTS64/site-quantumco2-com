@@ -182,7 +182,7 @@
 <body>
   <div class="wrap">
     <div class="topbar">
-      <div class="badge">Actif numérique disponible à l’acquisition</div>
+      <div class="badge" id="availability-label">Available for acquisition</div>
       <div class="lang">
         <button id="btn-fr" aria-pressed="false">FR</button>
         <button id="btn-en" aria-pressed="true">EN</button>
@@ -190,7 +190,7 @@
     </div>
 
     <!-- ================ HERO FR ================ -->
-    <section class="card hero" data-fr hidden>
+    <section class="card hero" data-fr>
       <h1>QuantumCO2.com</h1>
       <img class="logo" src="/logo-quantumco2.png" alt="QuantumCO2.com" loading="eager">
       <p class="muted">
@@ -230,7 +230,7 @@
     </section>
 
     <!-- ================ VALUE FR ================ -->
-    <section id="value-fr" class="card" style="margin-top:16px" data-fr hidden>
+    <section id="value-fr" class="card" style="margin-top:16px" data-fr>
       <div class="grid">
         <div class="col-6">
           <h3>Pourquoi QuantumCO2.com a de la valeur</h3>
@@ -266,7 +266,7 @@
     </section>
 
     <!-- ================ COMPLEMENTARY FR ================ -->
-    <section class="card" style="margin-top:16px" data-fr hidden>
+    <section class="card" style="margin-top:16px" data-fr>
       <h3>Actifs complémentaires (sélection)</h3>
       <div class="list">
         <div class="chip">
@@ -289,7 +289,7 @@
     </section>
 
     <!-- ================ ACQUISITION FR ================ -->
-    <section class="card" style="margin-top:16px" data-fr hidden>
+    <section class="card" style="margin-top:16px" data-fr>
       <h3>Acquisition (process sécurisé)</h3>
       <p class="muted">
         Process type : NDA &rarr; échanges stratégiques &rarr; offre formelle &rarr; escrow
@@ -303,7 +303,7 @@
     </section>
 
     <!-- ================ DOCS FR ================ -->
-    <section class="card" style="margin-top:16px" data-fr hidden>
+    <section class="card" style="margin-top:16px" data-fr>
       <h3>Documents / Briefs</h3>
       <p class="muted">
         Brief d’acquisition détaillé (2025-11) disponible en français et en anglais
@@ -326,7 +326,7 @@
     </section>
 
     <!-- ================ HERO EN ================ -->
-    <section class="card hero" data-en>
+    <section class="card hero" data-en hidden>
       <h1>QuantumCO2.com</h1>
       <img class="logo" src="/logo-quantumco2.png" alt="QuantumCO2.com" loading="eager">
       <p class="muted">
@@ -345,6 +345,9 @@
       <div class="cta">
         <a class="btn primary" href="mailto:contact@quantumco2.com?subject=QuantumCO2.com%20-%20NDA%20%2F%20Offer&body=Hello%2C%0D%0A%0D%0AI%27d%20like%20to%20request%20your%20NDA%20and%2For%20submit%20an%20offer%20for%20QuantumCO2.com.%0D%0ACompany%3A%20%0D%0AName%20%2F%20Role%3A%20%0D%0AIntended%20use%3A%20%0D%0ABudget%20range%3A%20%0D%0ABest%2C">
           Submit an offer / Request NDA
+        </a>
+        <a class="btn" href="/concept-note.html">
+          Concept Note
         </a>
         <a class="btn" href="#value-en">Why this name?</a>
         <a class="btn" href="https://www.linkedin.com/company/quantumco2" target="_blank" rel="noopener" aria-label="Open QuantumCO2 on LinkedIn">
@@ -365,7 +368,7 @@
     </section>
 
     <!-- ================ VALUE EN ================ -->
-    <section id="value-en" class="card" style="margin-top:16px" data-en>
+    <section id="value-en" class="card" style="margin-top:16px" data-en hidden>
       <div class="grid">
         <div class="col-6">
           <h3>Why QuantumCO2.com is valuable</h3>
@@ -401,7 +404,7 @@
     </section>
 
     <!-- ================ COMPLEMENTARY EN ================ -->
-    <section class="card" style="margin-top:16px" data-en>
+    <section class="card" style="margin-top:16px" data-en hidden>
       <h3>Related assets (selection)</h3>
       <div class="list">
         <div class="chip">
@@ -424,7 +427,7 @@
     </section>
 
     <!-- ================ ACQUISITION EN ================ -->
-    <section class="card" style="margin-top:16px" data-en>
+    <section class="card" style="margin-top:16px" data-en hidden>
       <h3>Acquisition (secure process)</h3>
       <p class="muted">
         Typical flow: NDA &rarr; strategic discussions &rarr; formal offer &rarr; escrow
@@ -438,7 +441,7 @@
     </section>
 
     <!-- ================ DOCS EN ================ -->
-    <section class="card" style="margin-top:16px" data-en>
+    <section class="card" style="margin-top:16px" data-en hidden>
       <h3>Documents / Briefs</h3>
       <p class="muted">
         Detailed acquisition brief (2025-11) available in English and French for
@@ -472,15 +475,28 @@
   <script>
     const frBtn = document.getElementById('btn-fr');
     const enBtn = document.getElementById('btn-en');
+    const availabilityLabel = document.getElementById('availability-label');
+
     const show = (lang) => {
       document.querySelectorAll('[data-fr]').forEach(n => n.hidden = (lang !== 'fr'));
       document.querySelectorAll('[data-en]').forEach(n => n.hidden = (lang !== 'en'));
+
       frBtn.setAttribute('aria-pressed', String(lang === 'fr'));
       enBtn.setAttribute('aria-pressed', String(lang === 'en'));
+
       document.documentElement.lang = lang;
+
+      if (availabilityLabel) {
+        availabilityLabel.textContent = (lang === 'fr')
+          ? 'Actif numérique disponible à l’acquisition'
+          : 'Available for acquisition';
+      }
     };
+
     frBtn.addEventListener('click', () => show('fr'));
     enBtn.addEventListener('click', () => show('en'));
+
+    // Default: EN for .com
     show('en');
   </script>
 </body>
